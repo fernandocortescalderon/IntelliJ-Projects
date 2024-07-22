@@ -14,7 +14,7 @@ public class Clase1_MetodosDeCadenas {
         // Convertir a mayúsculas
         var mayusculas = cadena1.toUpperCase();
         //System.out.println(mayusculas);
-        System.out.println(cadena1.toUpperCase());
+        System.out.println(mayusculas);
 
         // Convertir a minusculas
         System.out.println(cadena1.toLowerCase());
@@ -23,7 +23,29 @@ public class Clase1_MetodosDeCadenas {
         var nombre = " Fernando Cortes ";
         System.out.println(nombre.trim());
 
+        // Concatenaciones
+        var hola = "Hola";
+        var mundo = "Mundo";
+        var holaMundo = hola.concat(" ").concat(mundo);
+        System.out.println(holaMundo);
+
+        // StringBuilder
+        var constructor = new StringBuilder();
+        constructor.append(hola);
+        constructor.append(" ");
+        constructor.append(mundo);
+        var string = constructor.toString();
+        System.out.println("string = " + string);
+
+        // StringBuffer: Varios procesos corren a la vez
+        var stringBuffer = new StringBuffer();
+        stringBuffer.append(hola).append(" ").append(mundo);
+        var resultado = stringBuffer.toString();
+        System.out.println("resultado = " + resultado);
         
+        // Join
+        resultado = String.join("-", hola, mundo);
+        System.out.println("resultado = " + resultado);
 
     }
 }
