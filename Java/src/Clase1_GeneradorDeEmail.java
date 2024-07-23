@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Clase1_GeneradorDeEmail {
     public static void main(String[] args) {
         Scanner consola = new Scanner(System.in);
-
+        s
         // Solicitar datos del usuario
         System.out.println("¿Cúal es tu nombre?");
         var nombreUsuario = consola.nextLine();
